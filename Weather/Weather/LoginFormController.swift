@@ -72,16 +72,34 @@ class LoginFormController: UIViewController {
                         name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        
+        let checkResult = checkUserData()
+        
+        if !checkResult {
+            showLoginError()
+        }
+        return checkResult
     }
-    */
-
+    
+    func checkUserData() -> Bool {
+        
+        let login = loginInput.text!
+        let password = passwordInput.text!
+        
+        if login == "admin" && password == "123456" {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    func showLoginError() {
+        let alter = UIAlertController(title: "Ошибка", message: "Введены неверные данные пользователя", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        
+        alter.addAction(action)
+        
+        present(alter, animated: true, completion: nil)
+    }
 }
