@@ -1,20 +1,19 @@
 //
-//  AllGroupsController.swift
+//  UserFriendsController.swift
 //  Weather
 //
-//  Created by Tatiana Tsygankova on 11.11.2018.
+//  Created by Цыганкова Татьяна on 12.11.2018.
 //  Copyright © 2018 Tatiana Tsygankova. All rights reserved.
 //
 
 import UIKit
 
-class AllGroupsController: UITableViewController {
+class UserFriendsController: UITableViewController {
     
-    var groups = [
-            DataModel(name: "Группа1", image: UIImage(named: "icon_1.png")!),
-            DataModel(name: "Группа2", image: UIImage(named: "icon_3.png")!),
-            DataModel(name: "Группа3", image: UIImage(named: "icon_4.png")!)
-        ]
+    var userFriends = [
+        DataModel(name: "Друг1", image: UIImage(named: "icon_5.png")!),
+        DataModel(name: "Друг2", image: UIImage(named: "icon_6.png")!)
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,20 +34,21 @@ class AllGroupsController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return groups.count
+        return userFriends.count
     }
 
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "GroupCell", for: indexPath) as! AllGroupsCell
 
-        let group = groups[indexPath.row]
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UserFriendCell", for: indexPath) as! UserFriendsCell
+
+        let friendName = userFriends[indexPath.row]
+
+        cell.userFriendName.text = friendName.name
+        cell.userFriendAvatar.image = friendName.image
         
-        cell.groupName.text = group.name
-        cell.groupAvatar.image = group.image
         return cell
     }
- 
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -59,6 +59,7 @@ class AllGroupsController: UITableViewController {
     */
 
     /*
+
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
