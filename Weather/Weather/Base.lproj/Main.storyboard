@@ -426,6 +426,9 @@
                             <outlet property="delegate" destination="IAQ-Gp-stc" id="DKa-E6-NTl"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="searchBar" destination="ei5-kc-DTf" id="twu-cK-MLC"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAV-ZL-Oxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="xxa-TP-fRc" userLabel="Exit" sceneMemberID="exit"/>

@@ -10,6 +10,8 @@ import UIKit
 
 class AllGroupsController: UITableViewController, UISearchBarDelegate {
     
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     var groups = [
             DataModel(name: "Группа1", image: UIImage(named: "icon_1.png")!),
             DataModel(name: "Группа2", image: UIImage(named: "icon_3.png")!),
@@ -32,6 +34,8 @@ class AllGroupsController: UITableViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        searchBar.delegate = self
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -41,6 +45,7 @@ class AllGroupsController: UITableViewController, UISearchBarDelegate {
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         filteredGroups = groupFilter(searchText)
+        tableView.reloadData()
     }
     
     
