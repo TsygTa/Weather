@@ -12,20 +12,7 @@ import UIKit
 
 class FriendController: UICollectionViewController {
     
-    private var photo = UIImage(named: "icon_2.png")!
-    
-    @IBAction func selectFriend(segue: UIStoryboardSegue) {
-        guard segue.identifier == "selectFriend" else { return }
-        
-        let userFriendsController = segue.source as! UserFriendsController
-        
-        if let indexPath = userFriendsController.tableView.indexPathForSelectedRow  {
-            let friend = userFriendsController.userFriends[indexPath.row]
-            
-            photo = friend.image
-            
-        }
-    }
+    var photo = UIImage(named: "icon_2.png")!
 
     override func viewDidLoad() {
         super.viewDidLoad()
