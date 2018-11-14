@@ -239,24 +239,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aAi-pc-UVS">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="104" height="96"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FriendCellID" id="FEs-CJ-2Rx" customClass="FriendCell" customModule="Weather" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                <rect key="frame" x="0.0" y="0.0" width="104" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="104" height="96"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Las-tA-ilH">
-                                            <rect key="frame" x="15" y="15" width="120" height="120"/>
+                                            <rect key="frame" x="20" y="16" width="64" height="64"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="120" id="PeU-oe-IcY"/>
-                                                <constraint firstAttribute="height" constant="120" id="qJQ-ar-GpB"/>
+                                                <constraint firstAttribute="width" constant="64" id="PeU-oe-IcY"/>
+                                                <constraint firstAttribute="height" constant="64" id="qJQ-ar-GpB"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
@@ -265,7 +265,7 @@
                                     <constraint firstItem="Las-tA-ilH" firstAttribute="centerX" secondItem="FEs-CJ-2Rx" secondAttribute="centerX" id="SY8-rX-IQv"/>
                                     <constraint firstItem="Las-tA-ilH" firstAttribute="centerY" secondItem="FEs-CJ-2Rx" secondAttribute="centerY" id="tR4-wq-FoE"/>
                                 </constraints>
-                                <size key="customSize" width="150" height="150"/>
+                                <size key="customSize" width="104" height="96"/>
                                 <connections>
                                     <outlet property="friendPhoto" destination="Las-tA-ilH" id="e9l-TA-cDF"/>
                                 </connections>
@@ -282,7 +282,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gMd-9A-RnZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7543" y="-146"/>
+            <point key="canvasLocation" x="-7543.1999999999998" y="-146.17691154422789"/>
         </scene>
         <!--Группы-->
         <scene sceneID="Fys-a8-WgC">
@@ -310,6 +310,29 @@
                     <view key="view" contentMode="scaleToFill" id="GLG-Nt-Xjw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="portret" translatesAutoresizingMaskIntoConstraints="NO" id="6MQ-H4-97J" customClass="RoundImageView" customModule="InTouch">
+                                <rect key="frame" x="128" y="92" width="119" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowVisible" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C7C-5H-KMF" customClass="LikeControl" customModule="InTouch">
+                                <rect key="frame" x="117" y="356" width="141" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="PNL-SH-Yae"/>
                     </view>
@@ -317,7 +340,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bIN-Sp-SXx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9804" y="1139"/>
+            <point key="canvasLocation" x="-9804" y="1138.3808095952024"/>
         </scene>
         <!--Группы-->
         <scene sceneID="2u0-Qf-dCh">
@@ -346,7 +369,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMv-v1-RDN">
                                             <rect key="frame" x="57" y="11.5" width="100" height="21"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="100" id="Axx-FX-0Ba"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Axx-FX-0Ba"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -453,4 +476,7 @@
             <point key="canvasLocation" x="-7543.1999999999998" y="525.78710644677665"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="portret" width="48" height="48"/>
+    </resources>
 </document>

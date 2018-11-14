@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import Weather
+@testable import InTouch
 
-class WeatherTests: XCTestCase {
+class InTouchTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

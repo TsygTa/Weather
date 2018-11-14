@@ -11,6 +11,8 @@
 		038909412198C94F00B2CD13 /* UserGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038909402198C94F00B2CD13 /* UserGroupsCell.swift */; };
 		038909442198C9AE00B2CD13 /* AllGroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038909432198C9AE00B2CD13 /* AllGroupsController.swift */; };
 		038909462198C9C700B2CD13 /* AllGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038909452198C9C700B2CD13 /* AllGroupsCell.swift */; };
+		03F4C7AC219CA6E500D900E8 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F4C7AB219CA6E500D900E8 /* RoundImageView.swift */; };
+		03F4C7AE219CCDDB00D900E8 /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F4C7AD219CCDDB00D900E8 /* LikeControl.swift */; };
 		07AF4DBC2199630A00FF1B5D /* UserFriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4DBB2199630A00FF1B5D /* UserFriendsController.swift */; };
 		07AF4DBE2199637B00FF1B5D /* UserFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4DBD2199637B00FF1B5D /* UserFriendsCell.swift */; };
 		07AF4DC1219963C500FF1B5D /* FriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF4DC0219963C500FF1B5D /* FriendController.swift */; };
@@ -20,8 +22,8 @@
 		3F8ED9B4218A3CDC0035F2C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8ED9B2218A3CDC0035F2C0 /* Main.storyboard */; };
 		3F8ED9B6218A3CDD0035F2C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F8ED9B5218A3CDD0035F2C0 /* Assets.xcassets */; };
 		3F8ED9B9218A3CDD0035F2C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8ED9B7218A3CDD0035F2C0 /* LaunchScreen.storyboard */; };
-		3F8ED9C4218A3CDD0035F2C0 /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8ED9C3218A3CDD0035F2C0 /* WeatherTests.swift */; };
-		3F8ED9CF218A3CDD0035F2C0 /* WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8ED9CE218A3CDD0035F2C0 /* WeatherUITests.swift */; };
+		3F8ED9C4218A3CDD0035F2C0 /* InTouchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8ED9C3218A3CDD0035F2C0 /* InTouchTests.swift */; };
+		3F8ED9CF218A3CDD0035F2C0 /* InTouchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8ED9CE218A3CDD0035F2C0 /* InTouchUITests.swift */; };
 		3F8ED9DD218A3D3A0035F2C0 /* LoginFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8ED9DC218A3D3A0035F2C0 /* LoginFormController.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,22 +49,24 @@
 		038909402198C94F00B2CD13 /* UserGroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGroupsCell.swift; sourceTree = "<group>"; };
 		038909432198C9AE00B2CD13 /* AllGroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsController.swift; sourceTree = "<group>"; };
 		038909452198C9C700B2CD13 /* AllGroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsCell.swift; sourceTree = "<group>"; };
+		03F4C7AB219CA6E500D900E8 /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		03F4C7AD219CCDDB00D900E8 /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControl.swift; sourceTree = "<group>"; };
 		07AF4DBB2199630A00FF1B5D /* UserFriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFriendsController.swift; sourceTree = "<group>"; };
 		07AF4DBD2199637B00FF1B5D /* UserFriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFriendsCell.swift; sourceTree = "<group>"; };
 		07AF4DC0219963C500FF1B5D /* FriendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendController.swift; sourceTree = "<group>"; };
 		07AF4DC2219963D900FF1B5D /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		07AF4DC42199996C00FF1B5D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		3F8ED9AB218A3CDC0035F2C0 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F8ED9AB218A3CDC0035F2C0 /* InTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8ED9AE218A3CDC0035F2C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F8ED9B3218A3CDC0035F2C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F8ED9B5218A3CDD0035F2C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F8ED9B8218A3CDD0035F2C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F8ED9BA218A3CDD0035F2C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F8ED9BF218A3CDD0035F2C0 /* WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F8ED9C3218A3CDD0035F2C0 /* WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTests.swift; sourceTree = "<group>"; };
+		3F8ED9BF218A3CDD0035F2C0 /* InTouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InTouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F8ED9C3218A3CDD0035F2C0 /* InTouchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InTouchTests.swift; sourceTree = "<group>"; };
 		3F8ED9C5218A3CDD0035F2C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F8ED9CA218A3CDD0035F2C0 /* WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F8ED9CE218A3CDD0035F2C0 /* WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUITests.swift; sourceTree = "<group>"; };
+		3F8ED9CA218A3CDD0035F2C0 /* InTouchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InTouchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F8ED9CE218A3CDD0035F2C0 /* InTouchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InTouchUITests.swift; sourceTree = "<group>"; };
 		3F8ED9D0218A3CDD0035F2C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F8ED9DC218A3D3A0035F2C0 /* LoginFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +114,15 @@
 			path = AllGroups;
 			sourceTree = "<group>";
 		};
+		03F4C7AA219CA58B00D900E8 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				03F4C7AB219CA6E500D900E8 /* RoundImageView.swift */,
+				03F4C7AD219CCDDB00D900E8 /* LikeControl.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		07AF4DBA219962AD00FF1B5D /* UserFriends */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,9 +146,9 @@
 		3F8ED9A2218A3CDB0035F2C0 = {
 			isa = PBXGroup;
 			children = (
-				3F8ED9AD218A3CDC0035F2C0 /* Weather */,
-				3F8ED9C2218A3CDD0035F2C0 /* WeatherTests */,
-				3F8ED9CD218A3CDD0035F2C0 /* WeatherUITests */,
+				3F8ED9AD218A3CDC0035F2C0 /* InTouch */,
+				3F8ED9C2218A3CDD0035F2C0 /* InTouchTests */,
+				3F8ED9CD218A3CDD0035F2C0 /* InTouchUITests */,
 				3F8ED9AC218A3CDC0035F2C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,16 +156,17 @@
 		3F8ED9AC218A3CDC0035F2C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3F8ED9AB218A3CDC0035F2C0 /* Weather.app */,
-				3F8ED9BF218A3CDD0035F2C0 /* WeatherTests.xctest */,
-				3F8ED9CA218A3CDD0035F2C0 /* WeatherUITests.xctest */,
+				3F8ED9AB218A3CDC0035F2C0 /* InTouch.app */,
+				3F8ED9BF218A3CDD0035F2C0 /* InTouchTests.xctest */,
+				3F8ED9CA218A3CDD0035F2C0 /* InTouchUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3F8ED9AD218A3CDC0035F2C0 /* Weather */ = {
+		3F8ED9AD218A3CDC0035F2C0 /* InTouch */ = {
 			isa = PBXGroup;
 			children = (
+				03F4C7AA219CA58B00D900E8 /* Tools */,
 				07AF4DBF2199638800FF1B5D /* Friend */,
 				07AF4DBA219962AD00FF1B5D /* UserFriends */,
 				038909422198C96000B2CD13 /* AllGroups */,
@@ -165,33 +179,33 @@
 				3F8ED9BA218A3CDD0035F2C0 /* Info.plist */,
 				07AF4DC42199996C00FF1B5D /* DataModel.swift */,
 			);
-			path = Weather;
+			path = InTouch;
 			sourceTree = "<group>";
 		};
-		3F8ED9C2218A3CDD0035F2C0 /* WeatherTests */ = {
+		3F8ED9C2218A3CDD0035F2C0 /* InTouchTests */ = {
 			isa = PBXGroup;
 			children = (
-				3F8ED9C3218A3CDD0035F2C0 /* WeatherTests.swift */,
+				3F8ED9C3218A3CDD0035F2C0 /* InTouchTests.swift */,
 				3F8ED9C5218A3CDD0035F2C0 /* Info.plist */,
 			);
-			path = WeatherTests;
+			path = InTouchTests;
 			sourceTree = "<group>";
 		};
-		3F8ED9CD218A3CDD0035F2C0 /* WeatherUITests */ = {
+		3F8ED9CD218A3CDD0035F2C0 /* InTouchUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3F8ED9CE218A3CDD0035F2C0 /* WeatherUITests.swift */,
+				3F8ED9CE218A3CDD0035F2C0 /* InTouchUITests.swift */,
 				3F8ED9D0218A3CDD0035F2C0 /* Info.plist */,
 			);
-			path = WeatherUITests;
+			path = InTouchUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3F8ED9AA218A3CDC0035F2C0 /* Weather */ = {
+		3F8ED9AA218A3CDC0035F2C0 /* InTouch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F8ED9D3218A3CDD0035F2C0 /* Build configuration list for PBXNativeTarget "Weather" */;
+			buildConfigurationList = 3F8ED9D3218A3CDD0035F2C0 /* Build configuration list for PBXNativeTarget "InTouch" */;
 			buildPhases = (
 				3F8ED9A7218A3CDC0035F2C0 /* Sources */,
 				3F8ED9A8218A3CDC0035F2C0 /* Frameworks */,
@@ -201,14 +215,14 @@
 			);
 			dependencies = (
 			);
-			name = Weather;
+			name = InTouch;
 			productName = Weather;
-			productReference = 3F8ED9AB218A3CDC0035F2C0 /* Weather.app */;
+			productReference = 3F8ED9AB218A3CDC0035F2C0 /* InTouch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3F8ED9BE218A3CDD0035F2C0 /* WeatherTests */ = {
+		3F8ED9BE218A3CDD0035F2C0 /* InTouchTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F8ED9D6218A3CDD0035F2C0 /* Build configuration list for PBXNativeTarget "WeatherTests" */;
+			buildConfigurationList = 3F8ED9D6218A3CDD0035F2C0 /* Build configuration list for PBXNativeTarget "InTouchTests" */;
 			buildPhases = (
 				3F8ED9BB218A3CDD0035F2C0 /* Sources */,
 				3F8ED9BC218A3CDD0035F2C0 /* Frameworks */,
@@ -219,14 +233,14 @@
 			dependencies = (
 				3F8ED9C1218A3CDD0035F2C0 /* PBXTargetDependency */,
 			);
-			name = WeatherTests;
+			name = InTouchTests;
 			productName = WeatherTests;
-			productReference = 3F8ED9BF218A3CDD0035F2C0 /* WeatherTests.xctest */;
+			productReference = 3F8ED9BF218A3CDD0035F2C0 /* InTouchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3F8ED9C9218A3CDD0035F2C0 /* WeatherUITests */ = {
+		3F8ED9C9218A3CDD0035F2C0 /* InTouchUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F8ED9D9218A3CDD0035F2C0 /* Build configuration list for PBXNativeTarget "WeatherUITests" */;
+			buildConfigurationList = 3F8ED9D9218A3CDD0035F2C0 /* Build configuration list for PBXNativeTarget "InTouchUITests" */;
 			buildPhases = (
 				3F8ED9C6218A3CDD0035F2C0 /* Sources */,
 				3F8ED9C7218A3CDD0035F2C0 /* Frameworks */,
@@ -237,9 +251,9 @@
 			dependencies = (
 				3F8ED9CC218A3CDD0035F2C0 /* PBXTargetDependency */,
 			);
-			name = WeatherUITests;
+			name = InTouchUITests;
 			productName = WeatherUITests;
-			productReference = 3F8ED9CA218A3CDD0035F2C0 /* WeatherUITests.xctest */;
+			productReference = 3F8ED9CA218A3CDD0035F2C0 /* InTouchUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -265,7 +279,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3F8ED9A6218A3CDC0035F2C0 /* Build configuration list for PBXProject "Weather" */;
+			buildConfigurationList = 3F8ED9A6218A3CDC0035F2C0 /* Build configuration list for PBXProject "InTouch" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -278,9 +292,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3F8ED9AA218A3CDC0035F2C0 /* Weather */,
-				3F8ED9BE218A3CDD0035F2C0 /* WeatherTests */,
-				3F8ED9C9218A3CDD0035F2C0 /* WeatherUITests */,
+				3F8ED9AA218A3CDC0035F2C0 /* InTouch */,
+				3F8ED9BE218A3CDD0035F2C0 /* InTouchTests */,
+				3F8ED9C9218A3CDD0035F2C0 /* InTouchUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -325,6 +339,8 @@
 				038909412198C94F00B2CD13 /* UserGroupsCell.swift in Sources */,
 				3F8ED9DD218A3D3A0035F2C0 /* LoginFormController.swift in Sources */,
 				0389093F2198C91E00B2CD13 /* UserGroupsController.swift in Sources */,
+				03F4C7AC219CA6E500D900E8 /* RoundImageView.swift in Sources */,
+				03F4C7AE219CCDDB00D900E8 /* LikeControl.swift in Sources */,
 				07AF4DC1219963C500FF1B5D /* FriendController.swift in Sources */,
 				038909462198C9C700B2CD13 /* AllGroupsCell.swift in Sources */,
 				07AF4DC3219963D900FF1B5D /* FriendCell.swift in Sources */,
@@ -335,7 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F8ED9C4218A3CDD0035F2C0 /* WeatherTests.swift in Sources */,
+				3F8ED9C4218A3CDD0035F2C0 /* InTouchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F8ED9CF218A3CDD0035F2C0 /* WeatherUITests.swift in Sources */,
+				3F8ED9CF218A3CDD0035F2C0 /* InTouchUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,12 +368,12 @@
 /* Begin PBXTargetDependency section */
 		3F8ED9C1218A3CDD0035F2C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3F8ED9AA218A3CDC0035F2C0 /* Weather */;
+			target = 3F8ED9AA218A3CDC0035F2C0 /* InTouch */;
 			targetProxy = 3F8ED9C0218A3CDD0035F2C0 /* PBXContainerItemProxy */;
 		};
 		3F8ED9CC218A3CDD0035F2C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3F8ED9AA218A3CDC0035F2C0 /* Weather */;
+			target = 3F8ED9AA218A3CDC0035F2C0 /* InTouch */;
 			targetProxy = 3F8ED9CB218A3CDD0035F2C0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -503,7 +519,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Weather/Info.plist;
+				INFOPLIST_FILE = InTouch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -520,7 +536,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Weather/Info.plist;
+				INFOPLIST_FILE = InTouch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -548,7 +564,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weather.app/Weather";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InTouch.app/InTouch";
 			};
 			name = Debug;
 		};
@@ -568,7 +584,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weather.app/Weather";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InTouch.app/InTouch";
 			};
 			name = Release;
 		};
@@ -613,7 +629,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3F8ED9A6218A3CDC0035F2C0 /* Build configuration list for PBXProject "Weather" */ = {
+		3F8ED9A6218A3CDC0035F2C0 /* Build configuration list for PBXProject "InTouch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3F8ED9D1218A3CDD0035F2C0 /* Debug */,
@@ -622,7 +638,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F8ED9D3218A3CDD0035F2C0 /* Build configuration list for PBXNativeTarget "Weather" */ = {
+		3F8ED9D3218A3CDD0035F2C0 /* Build configuration list for PBXNativeTarget "InTouch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3F8ED9D4218A3CDD0035F2C0 /* Debug */,
@@ -631,7 +647,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F8ED9D6218A3CDD0035F2C0 /* Build configuration list for PBXNativeTarget "WeatherTests" */ = {
+		3F8ED9D6218A3CDD0035F2C0 /* Build configuration list for PBXNativeTarget "InTouchTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3F8ED9D7218A3CDD0035F2C0 /* Debug */,
@@ -640,7 +656,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F8ED9D9218A3CDD0035F2C0 /* Build configuration list for PBXNativeTarget "WeatherUITests" */ = {
+		3F8ED9D9218A3CDD0035F2C0 /* Build configuration list for PBXNativeTarget "InTouchUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3F8ED9DA218A3CDD0035F2C0 /* Debug */,
