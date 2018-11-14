@@ -18,7 +18,14 @@ class UserGroupsController: UITableViewController {
         let allGroupsController = segue.source as! AllGroupsController
         
         if let indexPath = allGroupsController.tableView.indexPathForSelectedRow  {
-            let group = allGroupsController.groups[indexPath.row]
+            
+            var group: DataModel
+            
+            if allGroupsController.filteredGroups.count > 0 {
+                group = allGroupsController.filteredGroups[indexPath.row]
+            } else {
+                group = allGroupsController.groups[indexPath.row]
+            }
             
             let newGroup = DataModel(name: group.name, image: group.image)
             

@@ -144,6 +144,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="mu2-V3-JnO" kind="relationship" relationship="viewControllers" id="nTN-CC-hAi"/>
                         <segue destination="QN8-2p-vwH" kind="relationship" relationship="viewControllers" id="2gz-gc-YlS"/>
                         <segue destination="Ym4-Pj-5az" kind="relationship" relationship="viewControllers" id="obb-y3-BN4"/>
                     </connections>
@@ -301,6 +302,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NmG-NB-vdD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-8999" y="528"/>
+        </scene>
+        <!--Профиль-->
+        <scene sceneID="yBk-LD-Spa">
+            <objects>
+                <viewController title="Профиль" id="mu2-V3-JnO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GLG-Nt-Xjw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="PNL-SH-Yae"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Профиль" id="PcQ-Ki-8u2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bIN-Sp-SXx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9804" y="1139"/>
         </scene>
         <!--Группы-->
         <scene sceneID="2u0-Qf-dCh">

@@ -13,23 +13,32 @@ class AllGroupsController: UITableViewController, UISearchBarDelegate {
     @IBOutlet weak var searchBar: UISearchBar!
     
     var groups = [
-            DataModel(name: "Группа1", image: UIImage(named: "icon_1.png")!),
-            DataModel(name: "Группа2", image: UIImage(named: "icon_3.png")!),
-            DataModel(name: "Группа3", image: UIImage(named: "icon_4.png")!)
+            DataModel(name: "Физика", image: UIImage(named: "gr_1.png")!),
+            DataModel(name: "Биология", image: UIImage(named: "gr_2.png")!),
+            DataModel(name: "Математика", image: UIImage(named: "gr_3.png")!),
+            DataModel(name: "IT", image: UIImage(named: "gr_4.png")!),
+            DataModel(name: "Книги", image: UIImage(named: "gr_5.png")!),
+            DataModel(name: "Кино", image: UIImage(named: "gr_6.png")!),
+            DataModel(name: "Путешествия", image: UIImage(named: "gr_7.png")!),
+            DataModel(name: "Авто", image: UIImage(named: "avto.png")!),
+            DataModel(name: "Интерьер", image: UIImage(named: "inter.png")!),
+            DataModel(name: "Рестораны", image: UIImage(named: "restor.png")!),
+            DataModel(name: "Медицина", image: UIImage(named: "med.png")!),
+            DataModel(name: "Мода", image: UIImage(named: "moda.png")!),
+            DataModel(name: "Образование", image: UIImage(named: "education.png")!),
+            DataModel(name: "Домашние животные", image: UIImage(named: "pets.png")!),
+            DataModel(name: "Природа", image: UIImage(named: "nature.png")!)
         ]
     
     var filteredGroups = [DataModel]()
     
-    func groupFilter(_ searchText: String) -> [DataModel] {
-    
-        var result = [DataModel]()
-    
-        for group in groups {
-            if group.name.contains(searchText) {
-                result.append(group)
-            }
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            filteredGroups = groups
+        } else {
+            filteredGroups = groups.filter { $0.name.lowercased().contains(searchText.lowercased()) }
         }
-        return result
+        tableView.reloadData()
     }
     
     override func viewDidLoad() {
@@ -43,12 +52,6 @@ class AllGroupsController: UITableViewController, UISearchBarDelegate {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        filteredGroups = groupFilter(searchText)
-        tableView.reloadData()
-    }
-    
-    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

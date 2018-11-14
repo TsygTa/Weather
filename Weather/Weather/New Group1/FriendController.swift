@@ -12,7 +12,7 @@ import UIKit
 
 class FriendController: UICollectionViewController {
     
-    var photo = UIImage(named: "icon_2.png")!
+    var photo = UIImage(named: "cross.png")!
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -11,8 +11,12 @@ import UIKit
 class UserFriendsController: UITableViewController {
     
     var userFriends = [
-        DataModel(name: "Друг1", image: UIImage(named: "icon_5.png")!),
-        DataModel(name: "Друг2", image: UIImage(named: "icon_6.png")!)
+        DataModel(name: "Друг1", image: UIImage(named: "fr_1.png")!),
+        DataModel(name: "Друг2", image: UIImage(named: "fr_2.png")!),
+        DataModel(name: "Друг3", image: UIImage(named: "fr_3.png")!),
+        DataModel(name: "Друг4", image: UIImage(named: "fr_4.png")!),
+        DataModel(name: "Друг5", image: UIImage(named: "fr_5.png")!),
+        DataModel(name: "Друг6", image: UIImage(named: "fr_6.png")!)
     ]
 
     override func viewDidLoad() {
